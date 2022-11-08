@@ -2,7 +2,7 @@ export default function orderByProps(obj, [key1, key2]) {
     const outputArr = [];
     for (const prop in obj) {
       if (obj.hasOwnProperty(prop)) {
-        if ((prop === key1) || (prop === key2)) {
+        if (prop === Infinity) {
           outputArr.push({ key: prop, value: obj[prop] });
           delete obj[prop];
         }
